@@ -1,5 +1,5 @@
 fun testaFuncionarios() {
-    val bruno = Funcionario("Bruno", "11111111111", 1000.0)
+    val bruno = Analista("Bruno", "11111111111", 2000.0)
     val bia = Analista("Beatriz", "22222222222", 2000.0)
     val rodrigo = Gerente("Rodrigo", "33333333333", 3000.0, senha = 123)
     val geovana = Diretor("Geovana", "44444444444", 4000.0, senha = 123, plr = 1000.0)
