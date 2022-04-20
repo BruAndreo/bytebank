@@ -1,20 +1,12 @@
 abstract class Conta(val titular: String, val numero: Int) {
     var saldo = 0.0
-        private set
+        protected set
 
     fun depositar(valor: Double) {
         saldo += valor
     }
 
-    open fun sacar(valor: Double) {
-        if (!saldoEhSuficiente(valor)) {
-            println("Saldo insuficiente")
-            return
-        }
-
-        saldo -= valor
-        println("Saque efetuado com sucesso")
-    }
+    abstract fun sacar(valor: Double)
 
     fun transferencia(contaDestino: Conta, valor: Double) {
         if (!saldoEhSuficiente(valor)) {
