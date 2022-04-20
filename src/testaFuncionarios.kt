@@ -20,5 +20,5 @@ fun testaFuncionarios() {
 
 fun imprimeInfos(funcionario: Funcionario) {
     println("Funcionário ${funcionario.nome}, portador do CPF ${funcionario.cpf} recebe R$ ${funcionario.salario}")
-    println("A bonificacao esse mês será de: R$ ${funcionario.bonificacao()}")
+    println("A bonificacao esse mês será de: R$ ${funcionario.bonificacao}")
 }
