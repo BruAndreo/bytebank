@@ -1,10 +1,10 @@
 class SistemaInterno {
 
-    fun login(funcionarioAdmin: FuncionarioAdmin, senha: Int) {
-        if (funcionarioAdmin.autenticar(senha)) {
-            println("${funcionarioAdmin.nome} --> Autenticado")
+    fun login(user: AutenticaImpl, senha: Int) {
+        if (user.autenticar(senha)) {
+            println("Autenticado")
         } else {
-            println("${funcionarioAdmin.nome} --> Falhou na autenticação")
+            println("Falhou na autenticação")
         }
     }
 

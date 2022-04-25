@@ -4,7 +4,7 @@ class Diretor(
     salario: Double,
     senha: Int,
     val plr: Double
-) : FuncionarioAdmin(nome, cpf, salario, senha) {
+) : FuncionarioAdmin(nome, cpf, salario, senha), AutenticaImpl {
 
     override val bonificacao: Double
         get() = salario + plr
