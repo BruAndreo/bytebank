@@ -1,4 +1,4 @@
-package modelo
+package dev.bruandreo.bytebank.modelo
 
 class ContaCorrente(titular: String, numero: Int) : Conta(titular, numero) {
 

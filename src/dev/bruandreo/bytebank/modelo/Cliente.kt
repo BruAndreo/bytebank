@@ -1,4 +1,4 @@
-package modelo
+package dev.bruandreo.bytebank.modelo
 
 class Cliente(val nome: String, val cpf: String, val senha: Int) : AutenticaImpl {
 

@@ -1,7 +1,7 @@
-import modelo.Cliente
-import modelo.Diretor
-import modelo.Gerente
-import modelo.SistemaInterno
+import dev.bruandreo.bytebank.modelo.Cliente
+import dev.bruandreo.bytebank.modelo.Diretor
+import dev.bruandreo.bytebank.modelo.Gerente
+import dev.bruandreo.bytebank.modelo.SistemaInterno
 
 fun testaAutenticacao() {
     val sistemaInterno = SistemaInterno()

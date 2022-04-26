@@ -1,4 +1,4 @@
-package modelo
+package dev.bruandreo.bytebank.modelo
 
 class CalculadoraBonificacao {
     var total: Double = 0.0

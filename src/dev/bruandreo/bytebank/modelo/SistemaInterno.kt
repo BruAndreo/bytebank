@@ -1,6 +1,4 @@
-package modelo
-
-import modelo.AutenticaImpl
+package dev.bruandreo.bytebank.modelo
 
 class SistemaInterno {
 

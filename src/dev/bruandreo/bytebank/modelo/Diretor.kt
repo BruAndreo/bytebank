@@ -1,4 +1,4 @@
-package modelo
+package dev.bruandreo.bytebank.modelo
 
 class Diretor(
     nome: String,

@@ -1,4 +1,4 @@
-import modelo.*
+import dev.bruandreo.bytebank.modelo.*
 
 fun testaFuncionarios() {
     val bruno = Analista("Bruno", "11111111111", 2000.0)

@@ -1,5 +1,5 @@
-import modelo.ContaCorrente
-import modelo.ContaPoupanca
+import dev.bruandreo.bytebank.modelo.ContaCorrente
+import dev.bruandreo.bytebank.modelo.ContaPoupanca
 
 fun testaContasDiferentes() {
     val contaCorrente = ContaCorrente("Bruno", 123)

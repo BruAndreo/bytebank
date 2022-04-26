@@ -1,4 +1,4 @@
-package modelo
+package dev.bruandreo.bytebank.modelo
 
 class ContaPoupanca(titular: String, numero: Int) : Conta(titular, numero) {
 
