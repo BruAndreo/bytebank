@@ -1,12 +1,13 @@
-class Diretor(
+package modelo
+
+class Gerente(
     nome: String,
     cpf: String,
     salario: Double,
-    senha: Int,
-    val plr: Double
+    senha: Int
 ) : FuncionarioAdmin(nome, cpf, salario, senha), AutenticaImpl {
 
     override val bonificacao: Double
-        get() = salario + plr
+        get() = salario
 
 }

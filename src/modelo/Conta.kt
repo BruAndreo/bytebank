@@ -1,3 +1,5 @@
+package modelo
+
 abstract class Conta(val titular: String, val numero: Int) {
     var saldo = 0.0
         protected set
@@ -16,7 +18,7 @@ abstract class Conta(val titular: String, val numero: Int) {
 
         saldo -= valor
         contaDestino.depositar(valor)
-        println("Transferencia realizada para Conta ${contaDestino.numero}")
+        println("Transferencia realizada para modelo.Conta ${contaDestino.numero}")
     }
 
     private fun saldoEhSuficiente(valor: Double): Boolean {

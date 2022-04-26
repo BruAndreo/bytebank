@@ -1,3 +1,5 @@
+import modelo.*
+
 fun testaFuncionarios() {
     val bruno = Analista("Bruno", "11111111111", 2000.0)
     val bia = Analista("Beatriz", "22222222222", 2000.0)

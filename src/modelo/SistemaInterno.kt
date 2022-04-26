@@ -1,3 +1,7 @@
+package modelo
+
+import modelo.AutenticaImpl
+
 class SistemaInterno {
 
     fun login(user: AutenticaImpl, senha: Int) {

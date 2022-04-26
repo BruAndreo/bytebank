@@ -1,8 +1,11 @@
+import modelo.ContaCorrente
+import modelo.ContaPoupanca
+
 fun testaComportamentosConta() {
     val contaBruno = ContaCorrente("Bruno", 12345)
     contaBruno.depositar(100.0)
 
-    println("${contaBruno.titular} | Conta: ${contaBruno.numero}")
+    println("${contaBruno.titular} | modelo.Conta: ${contaBruno.numero}")
     println("Seu saldo é de: R$ ${contaBruno.saldo}")
 
     contaBruno.sacar(50.2)

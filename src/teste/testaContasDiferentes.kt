@@ -1,3 +1,6 @@
+import modelo.ContaCorrente
+import modelo.ContaPoupanca
+
 fun testaContasDiferentes() {
     val contaCorrente = ContaCorrente("Bruno", 123)
     val contaPoupanca = ContaPoupanca("Geovana", 124)
