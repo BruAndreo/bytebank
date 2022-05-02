@@ -1,9 +1,10 @@
+import dev.bruandreo.bytebank.modelo.Cliente
 import dev.bruandreo.bytebank.modelo.ContaCorrente
 import dev.bruandreo.bytebank.modelo.ContaPoupanca
 
 fun testaContasDiferentes() {
-    val contaCorrente = ContaCorrente("Bruno", 123)
-    val contaPoupanca = ContaPoupanca("Geovana", 124)
+    val contaCorrente = ContaCorrente(Cliente("Bruno", "111.111.111-11", 123), 123)
+    val contaPoupanca = ContaPoupanca(Cliente("Geovana", "222.222.222-22", 456), 124)
 
     contaCorrente.depositar(1000.0)
     contaPoupanca.depositar(1000.0)
