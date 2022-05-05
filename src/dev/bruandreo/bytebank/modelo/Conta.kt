@@ -34,4 +34,8 @@ abstract class Conta(val titular: Cliente, val numero: Int) {
     private fun saldoEhSuficiente(valor: Double): Boolean {
         return saldo >= valor
     }
+
+    override fun toString(): String {
+        return "Conta $numero - Titular ${titular.nome}"
+    }
 }
