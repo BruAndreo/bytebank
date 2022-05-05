@@ -1,4 +1,5 @@
 import dev.bruandreo.bytebank.modelo.Cliente
+import dev.bruandreo.bytebank.modelo.Conta
 import dev.bruandreo.bytebank.modelo.ContaCorrente
 import dev.bruandreo.bytebank.modelo.ContaPoupanca
 
@@ -18,4 +19,6 @@ fun testaComportamentosConta() {
 
     println("Saldo da conta da Geovana é de R$ ${contaGeovana.saldo}")
     println("Saldo da conta do Bruno é de R$ ${contaBruno.saldo}")
+
+    println("Quantidade de contas criadas: ${Conta.total}")
 }

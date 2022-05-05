@@ -4,6 +4,16 @@ abstract class Conta(val titular: Cliente, val numero: Int) {
     var saldo = 0.0
         protected set
 
+    companion object {
+        var total = 0
+            private set
+    }
+
+    init {
+        println("Criando conta")
+        total++
+    }
+
     fun depositar(valor: Double) {
         saldo += valor
     }
