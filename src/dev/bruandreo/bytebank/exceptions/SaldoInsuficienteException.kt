@@ -1,3 +1,3 @@
 package dev.bruandreo.bytebank.exceptions
 
-class SaldoInsuficienteException : Exception("Saldo insuficiente")
+class SaldoInsuficienteException(override val message: String = "Saldo insuficiente") : Exception(message)
