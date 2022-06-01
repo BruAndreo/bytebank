@@ -1,5 +1,7 @@
 package dev.bruandreo.bytebank.modelo
 
+import dev.bruandreo.bytebank.exceptions.SaldoInsuficienteException
+
 abstract class Conta(val titular: Cliente, val numero: Int) {
     var saldo = 0.0
         protected set
@@ -22,8 +24,7 @@ abstract class Conta(val titular: Cliente, val numero: Int) {
 
     fun transferencia(contaDestino: Conta, valor: Double) {
         if (!saldoEhSuficiente(valor)) {
-            println("Saldo insuficiente")
-            return
+            throw SaldoInsuficienteException()
         }
 
         saldo -= valor
